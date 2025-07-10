@@ -18,13 +18,13 @@ const drawContour = () => {
 }
 
 const drawNavBar = () => {
-    const node = rc.rectangle(0, 0, vw(100), vh(7), {
+    const node = rc.rectangle(0, 0, vw(100), vh(5), {
         roughness: 1.5,
         stroke: 'gray',
         strokeWidth: 2,
-        fill: '#7C7C7C',
+        fill: 'black',
         fillStyle: 'hachure',
-        hachureGap: 0.6,      
+        hachureGap: 0.4,      
         hachureAngle: 50,   
         fillWeight: 0.6,     
       });
@@ -35,7 +35,7 @@ const drawNavBar = () => {
 }
 
 const drawSndNavBar = () => {
-    const node = rc.rectangle(vw(0.1), vh(7), vw(99.7), vh(8), {
+    const node = rc.rectangle(vw(0.1), vh(5), vw(99.7), vh(8), {
         roughness: 1,
         stroke: 'gray',
         strokeWidth: 2,
