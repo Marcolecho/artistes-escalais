@@ -1,13 +1,42 @@
-body {
+
+
+@font-face {
+    font-family: 'Papyrus';
+    src: url('../utils/Papyrus.ttf') format('truetype');
+}
+  
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fdfdfd;
     overflow-y: hidden;
     margin: 0;
+    font-family: 'Papyrus', sans-serif;
 }
 
 svg {
     width: 100vw;
     height: 100vw;
+}
+
+.text-NavBar{
+    font-size: 1vw;
+    fill: white;
+}
+
+.text-NavSubBar1part{
+    font-size: 0.8vw;
+    fill: black;
+}
+
+.text-NavSubBar2part{
+    font-size: 1.5vw;
+    fill: black;
+    
+}
+
+.text-NavSubBar2partSelected{
+    font-size: 1.5vw;
+    fill: white;
 }
