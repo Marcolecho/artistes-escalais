@@ -1,11 +1,12 @@
 import {drawBase} from "./modules/drawBase.js";
 import {drawHome, manageCarroussel} from "./modules/drawHome.js";
 import {drawNews} from "./modules/drawNews.js";
+import {drawGallerie} from "./modules/drawGallerie.js";
+
 
 const main = () => {
     drawBase();
     window.addEventListener('resize', () => clean());
-
     const pathName = window.location.pathname;
     switch(pathName){
         case "/":
@@ -15,7 +16,9 @@ const main = () => {
         case "/pages/news.html":
             drawNews();
             break;
-
+        case "/pages/gallerie.html":
+            drawGallerie();
+            break;
         default:
             break;
     }
@@ -35,6 +38,9 @@ const clean = () => {
             break;
         case "/pages/news.html":
             drawNews();
+            break;
+        case "/pages/gallerie.html":
+            drawGallerie();
             break;
         default:
             break;
