@@ -1,5 +1,5 @@
 import rough from "https://cdn.skypack.dev/roughjs@4.3.1";
-import {vw, vh} from "./converter.js";
+import {vw, vh} from "https://marcolecho.github.io/artistes-escalais/converter.js";
 
 const svg = document.getElementById('sketch');
 const rc = rough.svg(svg);
@@ -76,7 +76,7 @@ const openModalDetails = (selectedType, imgPrint) => {
     modale.id = "modaleDetails";
     modale.innerHTML = `   
         <div id="details-container">
-            <img src="${'../img/gallerie/' + selectedType +'/'+ imgPrint.label+'.jpg'}" alt="">
+            <img src="${'https://marcolecho.github.io/artistes-escalais/img/gallerie/' + selectedType +'/'+ imgPrint.label+'.jpg'}" alt="">
             <p class="details-text"> Crée par ${imgPrint.createur} </p>
         </div>`
     document.body.appendChild(modale);
@@ -230,7 +230,7 @@ const drawImgType = () => {
 
     tabToForeach.forEach(img => {
         const imgPrint = document.createElement('img');
-        imgPrint.src = '../img/gallerie/' + selectedType +'/'+img.label+'.jpg';
+        imgPrint.src = 'https://marcolecho.github.io/artistes-escalais/img/gallerie/' + selectedType +'/'+img.label+'.jpg';
         imgPrint.className = "imgGallerie";
         container.appendChild(imgPrint);
 

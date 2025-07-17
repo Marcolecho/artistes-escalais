@@ -1,5 +1,5 @@
 import rough from "https://cdn.skypack.dev/roughjs@4.3.1";
-import {vw, vh} from "./converter.js";
+import {vw, vh} from "https://marcolecho.github.io/artistes-escalais/converter.js";
 
 const svg = document.getElementById('sketch');
 const rc = rough.svg(svg);
@@ -78,7 +78,7 @@ const drawTextNavBar = () => {
     
     const imgMail = document.createElementNS("http://www.w3.org/2000/svg", "image");
     imgMail.setAttribute("id", "imgMail");
-    imgMail.setAttributeNS(null, "href", "../img/mail.png"); 
+    imgMail.setAttributeNS(null, "href", "https://marcolecho.github.io/artistes-escalais/img/mail.png"); 
     imgMail.setAttribute("x", vw(33));
     imgMail.setAttribute("y", vh(1));
     imgMail.setAttribute("width", vw(2));
@@ -87,7 +87,7 @@ const drawTextNavBar = () => {
 
     const imgReseaux = document.createElementNS("http://www.w3.org/2000/svg", "image");
     imgReseaux.setAttribute("id", "imgReseaux");
-    imgReseaux.setAttributeNS(null, "href", "../img/reseaux.png"); 
+    imgReseaux.setAttributeNS(null, "href", "https://marcolecho.github.io/artistes-escalais/img/reseaux.png"); 
     imgReseaux.setAttribute("x", vw(93));
     imgReseaux.setAttribute("y", vh(1));
     imgReseaux.setAttribute("width", vw(6));
@@ -118,7 +118,7 @@ const drawTextSubNavBar = () => {
 
     const imgLogo = document.createElementNS("http://www.w3.org/2000/svg", "image");
     imgLogo.setAttribute("id", "imgLogo");
-    imgLogo.setAttributeNS(null, "href", "../img/logo.png"); 
+    imgLogo.setAttributeNS(null, "href", "https://marcolecho.github.io/artistes-escalais/img/logo.png"); 
     imgLogo.setAttribute("x", vw(2.5));
     imgLogo.setAttribute("y", vh(5.5));
     imgLogo.setAttribute("width", vw(10));
@@ -132,11 +132,11 @@ const drawTextSubNavBar = () => {
 
 const drawNavBarMenu = () => {
     const menuItems = [
-        { id: "textAccueil", label: "Accueil", x: 50, href: "/" },
-        { id: "textNews", label: "News", x: 57, href: "/pages/news.html" },
-        { id: "textGallerie", label: "Gallerie", x: 62.5, href: "/pages/gallerie.html" },
-        { id: "textCours", label: "Cours", x: 69.5, href: "/pages/cours.html" },
-        { id: "textContact", label: "Contact", x: 76, href: "/pages/contact.html" }
+        { id: "textAccueil", label: "Accueil", x: 50, href: "https://marcolecho.github.io/artistes-escalais/" },
+        { id: "textNews", label: "News", x: 57, href: "https://marcolecho.github.io/artistes-escalais/pages/news.html" },
+        { id: "textGallerie", label: "Gallerie", x: 62.5, href: "https://marcolecho.github.io/artistes-escalais/pages/gallerie.html" },
+        { id: "textCours", label: "Cours", x: 69.5, href: "https://marcolecho.github.io/artistes-escalais/pages/cours.html" },
+        { id: "textContact", label: "Contact", x: 76, href: "https://marcolecho.github.io/artistes-escalais/pages/contact.html" }
     ];
 
     menuItems.forEach(item => {

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Papyrus';
-    src: url('../utils/Papyrus.ttf') format('truetype');
+    src: url('https://marcolecho.github.io/artistes-escalais/utils/Papyrus.ttf') format('truetype');
 }
   
   body {
