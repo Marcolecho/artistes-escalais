@@ -15,13 +15,13 @@ const main = () => {
             drawHome();
             manageCarroussel();
             break;
-        case "/pages/news.html":
+        case "/artistes-escalais/pages/news.html":
             drawNews();
             break;
-        case "/pages/gallerie.html":
+        case "/artistes-escalais/pages/gallerie.html":
             drawGallerie();
             break;
-        case "/pages/contact.html":
+        case "/artistes-escalais/pages/contact.html":
             drawContact();
             break;
         default:
