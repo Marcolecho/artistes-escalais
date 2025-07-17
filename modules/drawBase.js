@@ -62,7 +62,7 @@ const drawTextNavBar = () => {
     
     const imgEmplacement = document.createElementNS("http://www.w3.org/2000/svg", "image");
     imgEmplacement.setAttribute("id", "imgEmplacement");
-    imgEmplacement.setAttributeNS(null, "href", "../img/emplacement.png"); 
+    imgEmplacement.setAttributeNS(null, "href", "/img/emplacement.png"); 
     imgEmplacement.setAttribute("x", vw(8));
     imgEmplacement.setAttribute("y", vh(1));
     imgEmplacement.setAttribute("width", vw(2));
