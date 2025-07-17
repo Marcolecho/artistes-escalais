@@ -15,13 +15,13 @@ const main = () => {
             drawHome();
             manageCarroussel();
             break;
-        case "artistes-escalais/pages/news.html":
+        case "/pages/news.html":
             drawNews();
             break;
-        case "artistes-escalais/pages/gallerie.html":
+        case "/pages/gallerie.html":
             drawGallerie();
             break;
-        case "artistes-escalais/pages/contact.html":
+        case "/pages/contact.html":
             drawContact();
             break;
         default:
@@ -37,14 +37,14 @@ const clean = () => {
     const pathName = window.location.pathname;
 
     switch(pathName){
-        case "artistes-escalais/":
+        case "/artistes-escalais/":
             drawHome();
             manageCarroussel();
             break;
-        case "artistes-escalais/pages/news.html":
+        case "/artistes-escalais/pages/news.html":
             drawNews();
             break;
-        case "artistes-escalais/pages/gallerie.html":
+        case "/artistes-escalais/pages/gallerie.html":
             drawGallerie();
             break;
         default:
