@@ -133,9 +133,9 @@ const drawTextSubNavBar = () => {
 const drawNavBarMenu = () => {
     const menuItems = [
         { id: "textAccueil", label: "Accueil", x: 50, href: "/artistes-escalais/" },
-        { id: "textNews", label: "News", x: 57, href: "/artistes-escalais/pages/news.html" },
+        { id: "textNews", label: "News", x: 57, href: "/pages/news.html" },
         { id: "textGallerie", label: "Gallerie", x: 62.5, href: "/artistes-escalais/pages/gallerie.html" },
-        { id: "textCours", label: "Cours", x: 69.5, href: "/artistes-escalais/pages/cours.html" },
+        { id: "textCours", label: "Cours", x: 69.5, href: "artistes-escalais/pages/cours.html" },
         { id: "textContact", label: "Contact", x: 76, href: "/artistes-escalais/pages/contact.html" }
     ];
 
