@@ -1,5 +1,5 @@
 import rough from "https://cdn.skypack.dev/roughjs@4.3.1";
-import {vw, vh} from "https://marcolecho.github.io/artistes-escalais/modules/converter.js";
+import {vw, vh} from "./converter.js";
 
 const svg = document.getElementById('sketch');
 const rc = rough.svg(svg);
@@ -132,11 +132,11 @@ const drawTextSubNavBar = () => {
 
 const drawNavBarMenu = () => {
     const menuItems = [
-        { id: "textAccueil", label: "Accueil", x: 50, href: "https://marcolecho.github.io/artistes-escalais/" },
-        { id: "textNews", label: "News", x: 57, href: "https://marcolecho.github.io/artistes-escalais/pages/news.html" },
-        { id: "textGallerie", label: "Gallerie", x: 62.5, href: "https://marcolecho.github.io/artistes-escalais/pages/gallerie.html" },
-        { id: "textCours", label: "Cours", x: 69.5, href: "https://marcolecho.github.io/artistes-escalais/pages/cours.html" },
-        { id: "textContact", label: "Contact", x: 76, href: "https://marcolecho.github.io/artistes-escalais/pages/contact.html" }
+        { id: "textAccueil", label: "Accueil", x: 50, href: "/" },
+        { id: "textNews", label: "News", x: 57, href: "/pages/news.html" },
+        { id: "textGallerie", label: "Gallerie", x: 62.5, href: "/pages/gallerie.html" },
+        { id: "textCours", label: "Cours", x: 69.5, href: "/pages/cours.html" },
+        { id: "textContact", label: "Contact", x: 76, href: "/pages/contact.html" }
     ];
 
     menuItems.forEach(item => {

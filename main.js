@@ -1,8 +1,8 @@
-import {drawBase} from "https://marcolecho.github.io/artistes-escalais/modules/drawBase.js";
-import {drawHome, manageCarroussel} from "https://marcolecho.github.io/artistes-escalais/modules/drawHome.js";
-import {drawNews} from "https://marcolecho.github.io/artistes-escalais/modules/drawNews.js";
-import {drawGallerie} from "https://marcolecho.github.io/artistes-escalais/modules/drawGallerie.js";
-import {drawContact} from "https://marcolecho.github.io/artistes-escalais/modules/drawContact.js"
+import {drawBase} from "./modules/drawBase.js";
+import {drawHome, manageCarroussel} from "./modules/drawHome.js";
+import {drawNews} from "./modules/drawNews.js";
+import {drawGallerie} from "./modules/drawGallerie.js";
+import {drawContact} from "./modules/drawContact.js"
 
 
 const main = () => {
