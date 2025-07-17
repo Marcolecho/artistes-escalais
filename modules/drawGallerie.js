@@ -71,6 +71,19 @@ const cleanContainer = () => {
     elements.forEach(el => el.remove());
 }
 
+const openModalDetails = (selectedType, imgPrint) => {
+    const modale = document.createElement('div');
+    modale.id = "modaleDetails";
+    modale.innerHTML = `   
+        <div id="details-container">
+            <img src="${'../img/gallerie/' + selectedType +'/'+ imgPrint.label+'.jpg'}" alt="">
+            <p class="details-text"> Crée par ${imgPrint.createur} </p>
+        </div>`
+    document.body.appendChild(modale);
+
+    modale.addEventListener('click', () => {modale.remove()})
+}
+
 const drawImgType = () => {
 
     const peintureAcrylique = [
@@ -220,6 +233,8 @@ const drawImgType = () => {
         imgPrint.src = '../img/gallerie/' + selectedType +'/'+img.label+'.jpg';
         imgPrint.className = "imgGallerie";
         container.appendChild(imgPrint);
+
+        imgPrint.addEventListener('click', () => openModalDetails(selectedType, img));
     });
 }
 

@@ -2,6 +2,7 @@ import {drawBase} from "./modules/drawBase.js";
 import {drawHome, manageCarroussel} from "./modules/drawHome.js";
 import {drawNews} from "./modules/drawNews.js";
 import {drawGallerie} from "./modules/drawGallerie.js";
+import {drawContact} from "./modules/drawContact.js"
 
 
 const main = () => {
@@ -18,6 +19,9 @@ const main = () => {
             break;
         case "/pages/gallerie.html":
             drawGallerie();
+            break;
+        case "/pages/contact.html":
+            drawContact();
             break;
         default:
             break;

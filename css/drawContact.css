@@ -1,0 +1,19 @@
+#contact-container{
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1vw; 
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1vw;
+    border-radius: 15px;
+}
