@@ -9,7 +9,6 @@ const main = () => {
     drawBase();
     window.addEventListener('resize', () => clean());
     const pathName = window.location.pathname;
-    console.log(pathName)
     switch(pathName){
         case "/artistes-escalais/":
             drawHome();
