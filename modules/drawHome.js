@@ -1,5 +1,5 @@
 import rough from "https://cdn.skypack.dev/roughjs@4.3.1";
-import {vw, vh} from "https://marcolecho.github.io/artistes-escalais/converter.js";
+import {vw, vh} from "https://marcolecho.github.io/artistes-escalais/modules/converter.js";
 
 const manageCarroussel = () => {
     const track = document.getElementById("carouselTrack");
